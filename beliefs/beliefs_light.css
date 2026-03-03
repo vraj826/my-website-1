@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+
+.container {
+  width: 75%;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #003366;
+}
+
+.card {
+  background-color: skyblue;
+  border: 1px solid #4d4dff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.card h2 {
+  color: darkblue;
+}
+
+.card:hover {
+  border-color: #8080ff;
+  box-shadow: 0 0 10px rgba(102,102,255,0.3);
+}
+
+.card p {
+  font-size: 18px;
+}
+
+.card span {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.quote1 {
+  font-family: Georgia, serif;
+  color: #003366;
+}
+
+.quote2 {
+  font-family: "Courier New", monospace;
+  color: #006600;
+}
+
+.quote3 {
+  font-family: Verdana, sans-serif;
+  color: #990000;
+}
+
+.quote4 {
+  font-family: Tahoma, sans-serif;
+  color: #3333ff;
+}
+
+.quote5 {
+  font-family: "Times New Roman", serif;
+  color: #663399;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #3333ff;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: #1a1aff;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Feedback Form - Light Mode</title>
+<link rel="stylesheet" href="form_dark.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Feedback Form</h1>
+
+<p>Please write your thoughts about my CV — Anonymous feedback allowed!</p>
+
+<form action="../main/cv_light.html" method="get">
+
+<fieldset>
+<legend>Personal Information (Optional)</legend>
+
+<label>First Name:</label>
+<input type="text" name="fname">
+
+<label>Last Name:</label>
+<input type="text" name="lname">
+
+<label>Email (Optional):</label>
+<input type="email" name="email">
+
+<label>Gender:</label>
+
+<div class="radio-group">
+  <label>
+    <input type="radio" name="gender" value="Male"> Male
+  </label>
+
+  <label>
+    <input type="radio" name="gender" value="Female"> Female
+  </label>
+
+  <label>
+    <input type="radio" name="gender" value="Other"> Other
+  </label>
+</div>
+
+<label>Profession:</label>
+<select name="profession">
+<option>Select</option>
+<option>Student</option>
+<option>Working Professional</option>
+<option>Self-Employed</option>
+</select>
+
+</fieldset>
+
+<fieldset>
+<legend>Your Thoughts on my CV</legend>
+
+<label>Overall Rating:</label>
+<div class="range-container">
+1
+<input type="range" name="rating" min="1" max="5">
+5
+</div>
+
+<label>What did you like?</label>
+<textarea name="likes" rows="4"></textarea>
+
+<label>Suggestions for improvement:</label>
+<textarea name="suggestions" rows="4"></textarea>
+
+<label>Would you recommend this CV?</label> <br>
+<input type="checkbox" name="recommend" value="Yes"> Yes <br><br>
+
+<label>Upload reference (optional):</label>
+<input type="file" name="file">
+
+<input type="submit" value="Submit Feedback">
+
+</fieldset>
+
+</form>
+
+<div class="buttons">
+<a href="../main/cv_dark.html" class="btn">Back to CV</a>
+<a href="form_light.html" class="btn">Switch to Light Mode</a>
+</div>
+
+</div>
+
+</body>
+</html>

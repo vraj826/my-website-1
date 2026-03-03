@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+
+.container {
+  width: 60%;
+  margin: 40px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+h1 {
+  text-align: center;
+  color: #003366;
+}
+
+p {
+  text-align: center;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+legend {
+  font-weight: bold;
+  color: #003366;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+input[type="range"],
+select,
+textarea {
+  width: 100%;
+  padding: 6px;
+  margin: 8px 0 15px 0;
+  border: 1px solid #ccc;
+}
+
+.range-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4da6ff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1a8cff;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #003366;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: #0055aa;
+}
+
+.radio-group {
+  margin: 10px 0 15px 0;
+}
+
+.radio-group label {
+  display: block;
+  margin-bottom: 8px;
+}

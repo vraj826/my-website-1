@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.container {
+  width: 75%;
+  margin: 40px auto;
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #00bfff;
+}
+
+.card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #1a1a2e;
+  border: 1px solid #4d4dff;
+}
+
+.card h2 {
+  color: #401ba6;
+}
+
+.card:hover {
+  border-color: #8080ff;
+  box-shadow: 0 0 10px rgba(102,102,255,0.3);
+}
+
+.card p {
+  font-size: 18px;
+}
+
+.card span {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #8888ff;
+}
+
+.quote1 {
+  font-family: Georgia, serif;
+  color: #ccccff;
+}
+
+.quote2 {
+  font-family: "Courier New", monospace;
+  color: #66ffcc;
+}
+
+.quote3 {
+  font-family: Verdana, sans-serif;
+  color: #ff9999;
+}
+
+.quote4 {
+  font-family: Tahoma, sans-serif;
+  color: #8080ff;
+}
+
+.quote5 {
+  font-family: "Times New Roman", serif;
+  color: #cc99ff;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #3333ff;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: #4d4dff;
+}

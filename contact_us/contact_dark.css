@@ -1,0 +1,71 @@
+body {
+  background-color: #1a1a1a;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #fff;
+}
+
+.container {
+  width: 60%;
+  margin: 40px auto;
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+h1 {
+  text-align: center;
+  color: #00bfff;
+}
+
+fieldset {
+  border: 1px solid #555;
+  padding: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #00bfff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 6px;
+  margin: 8px 0 15px 0;
+  border: 1px solid #555;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+input[type="submit"] {
+  background-color: #00bfff;
+  color: black;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #33ccff;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00bfff;
+  color: black;
+  padding: 8px 15px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: #33ccff;
+}
