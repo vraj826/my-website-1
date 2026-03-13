@@ -1,7 +1,28 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  background: linear-gradient(to right, #eef3ff, #ffffff);
+  color: #222222;
+}
+
+.nav {
+  background-color: #f0f2ff;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #d3d8ff;
+}
+
+.nav a {
+  display: inline-block;
+  margin: 0 12px;
+  color: #3333ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
 }
 
 .container {
@@ -10,33 +31,26 @@ body {
   background-color: white;
   padding: 30px;
   border-radius: 8px;
+  border: 1px solid #dde3f7;
 }
 
 h1 {
   text-align: center;
-  color: #003366;
+  color: #3333ff;
+  margin-top: 0;
 }
 
 .card {
-  background-color: skyblue;
-  border: 1px solid #4d4dff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  transition: 0.3s ease;
-}
-
-.card h2 {
-  color: darkblue;
-}
-
-.card:hover {
-  border-color: #8080ff;
-  box-shadow: 0 0 10px rgba(102,102,255,0.3);
+  background-color: #f5f7ff;
+  border: 1px solid #c4ccff;
+  padding: 18px;
+  margin-bottom: 18px;
+  border-radius: 6px;
 }
 
 .card p {
   font-size: 18px;
+  margin: 0;
 }
 
 .card span {
@@ -48,17 +62,14 @@ h1 {
 
 .quote1 {
   font-family: Georgia, serif;
-  color: #003366;
 }
 
 .quote2 {
   font-family: "Courier New", monospace;
-  color: #006600;
 }
 
 .quote3 {
   font-family: Verdana, sans-serif;
-  color: #990000;
 }
 
 .quote4 {
@@ -68,7 +79,6 @@ h1 {
 
 .quote5 {
   font-family: "Times New Roman", serif;
-  color: #663399;
 }
 
 .buttons {
@@ -80,9 +90,11 @@ h1 {
   display: inline-block;
   background-color: #3333ff;
   color: white;
-  padding: 8px 15px;
+  padding: 8px 16px;
   text-decoration: none;
   margin: 5px;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 .btn:hover {

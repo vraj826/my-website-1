@@ -1,8 +1,22 @@
 body {
   background-color: #f4f6f9;
-  color: #222;
+  color: #222222;
   font-family: Arial, sans-serif;
   margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  margin-top: 0;
+}
+
+.page {
+  width: 80%;
+  margin: 25px auto 40px auto;
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 6px;
+  border: 1px solid #dde3f7;
 }
 
 .banner {
@@ -11,7 +25,7 @@ body {
 
 .banner table {
   width: 100%;
-  background-color: royalblue;
+  background-color: #3333ff;
   border-collapse: collapse;
 }
 
@@ -21,57 +35,118 @@ body {
   vertical-align: middle;
 }
 
+.banner-left img {
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
 .banner h1 {
-  text-shadow: 0 0 3px black;
   margin: 0;
-  color: white;
+  color: #ffffff;
 }
 
 .banner h4 {
-  font-style: oblique;
-  margin: 5px 0 0 0;
-  color: #e6f2ff;
+  margin: 6px 0 0 0;
+  color: #e6f0ff;
+  font-style: italic;
+  font-size: 14px;
 }
 
 .banner a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .banner a:hover {
   text-decoration: underline;
 }
 
+.banner-right form {
+  margin-bottom: 12px;
+}
+
+.nav {
+  background-color: #f0f2ff;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #d3d8ff;
+}
+
+.nav a {
+  display: inline-block;
+  margin: 0 12px;
+  color: #3333ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
 table {
-  width: 80%;
+  width: 100%;
   border-collapse: collapse;
-  margin: 25px auto;
-  background-color: white;
+  margin: 18px 0;
+  background-color: #ffffff;
 }
 
 th, td {
-  border: 1px solid #ccc;
+  border: 1px solid #d7d7d7;
   padding: 10px;
+  text-align: left;
+  font-size: 14px;
 }
 
 th {
-  background-color: #e6f2ff;
+  background-color: #f3f5ff;
+  color: #222222;
+}
+
+.summary-text {
+  max-width: 900px;
+  line-height: 1.5;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+.quote-list li {
+  font-family: "Georgia", serif;
 }
 
 input[type="submit"] {
-  background-color: #e6f2ff;
-  color: #4da6ff;
+  background-color: #3333ff;
+  color: #ffffff;
   border: none;
-  padding: 7px 14px;
+  padding: 7px 16px;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 10px;
+  font-size: 13px;
 }
 
 input[type="submit"]:hover {
-  background-color: #b3d7ff;
+  background-color: #1a1aff;
 }
 
-body {
-  font-family: "Times New Roman", Times, serif;
+.inline-form {
+  display: inline-block;
+  margin: 0 8px 0 0;
+}
+
+.page a {
+  color: #3333ff;
+  text-decoration: none;
+}
+
+.page a:hover {
+  text-decoration: underline;
+}
+
+.section-footer {
+  margin-top: 30px;
+  text-align: left;
 }

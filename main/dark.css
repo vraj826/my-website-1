@@ -1,8 +1,22 @@
 body {
-  background-color: #1a1a1a;
+  background-color: #121212;
   color: #f1f1f1;
   font-family: Arial, sans-serif;
   margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  margin-top: 0;
+}
+
+.page {
+  width: 80%;
+  margin: 25px auto 40px auto;
+  background-color: #181818;
+  padding: 25px 30px;
+  border-radius: 6px;
+  border: 1px solid #262a4f;
 }
 
 .banner {
@@ -11,7 +25,7 @@ body {
 
 .banner table {
   width: 100%;
-  background-color: #0f61ba;
+  background-color: #1a1a3b;
   border-collapse: collapse;
 }
 
@@ -21,57 +35,118 @@ body {
   vertical-align: middle;
 }
 
+.banner-left img {
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
 .banner h1 {
-  text-shadow: 0 0 3px white;
   margin: 0;
-  color: black;
+  color: #ffffff;
 }
 
 .banner h4 {
-  font-style: oblique;
-  margin: 5px 0 0 0;
-  color: black;
+  margin: 6px 0 0 0;
+  color: #c4ccff;
+  font-style: italic;
+  font-size: 14px;
 }
 
 .banner a {
-  color: #00bfff;
+  color: #99b0ff;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .banner a:hover {
   text-decoration: underline;
 }
 
+.banner-right form {
+  margin-bottom: 12px;
+}
+
+.nav {
+  background-color: #141428;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #22224a;
+}
+
+.nav a {
+  display: inline-block;
+  margin: 0 12px;
+  color: #c7d0ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
 table {
-  width: 80%;
+  width: 100%;
   border-collapse: collapse;
-  margin: 25px auto;
-  background-color: #1e1e1e;
+  margin: 18px 0;
+  background-color: #15151f;
 }
 
 th, td {
-  border: 1px solid #555;
+  border: 1px solid #3b3b3b;
   padding: 10px;
+  text-align: left;
+  font-size: 14px;
 }
 
 th {
-  background-color: #333333;
+  background-color: #1f1f35;
+  color: #f1f1f1;
+}
+
+.summary-text {
+  max-width: 900px;
+  line-height: 1.5;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+.quote-list li {
+  font-family: "Georgia", serif;
 }
 
 input[type="submit"] {
-  background-color: #00bfff;
-  color: black;
+  background-color: #3333ff;
+  color: #ffffff;
   border: none;
-  padding: 7px 14px;
+  padding: 7px 16px;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 10px;
+  font-size: 13px;
 }
 
 input[type="submit"]:hover {
-  background-color: #33ccff;
+  background-color: #4d4dff;
 }
 
-body {
-  font-family: "Times New Roman", Times, serif;
+.inline-form {
+  display: inline-block;
+  margin: 0 8px 0 0;
+}
+
+.page a {
+  color: #99b0ff;
+  text-decoration: none;
+}
+
+.page a:hover {
+  text-decoration: underline;
+}
+
+.section-footer {
+  margin-top: 30px;
+  text-align: left;
 }

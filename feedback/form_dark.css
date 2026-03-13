@@ -1,8 +1,28 @@
 body {
-  background-color: #1a1a1a;
+  background-color: #121212;
   font-family: Arial, sans-serif;
   margin: 0;
-  color: #fff;
+  color: #ffffff;
+}
+
+.nav {
+  background-color: #141428;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #22224a;
+}
+
+.nav a {
+  display: inline-block;
+  margin: 0 12px;
+  color: #c7d0ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
 }
 
 .container {
@@ -11,11 +31,13 @@ body {
   background-color: #1e1e1e;
   padding: 25px;
   border-radius: 6px;
+  border: 1px solid #262a4f;
 }
 
 h1 {
   text-align: center;
-  color: #00bfff;
+  color: #c7d0ff;
+  margin-top: 0;
 }
 
 p {
@@ -25,12 +47,17 @@ p {
 fieldset {
   margin-bottom: 20px;
   padding: 15px;
-  border: 1px solid #555;
+  border: 1px solid #555555;
 }
 
 legend {
   font-weight: bold;
-  color: #00bfff;
+  color: #c7d0ff;
+}
+
+label {
+  display: block;
+  margin-top: 6px;
 }
 
 input[type="text"],
@@ -41,27 +68,43 @@ select,
 textarea {
   width: 100%;
   padding: 8px;
-  margin: 8px 0 15px 0;
-  border: 1px solid #555;
+  margin: 6px 0 12px 0;
+  border: 1px solid #555555;
   background-color: #2a2a2a;
   color: #ffffff;
+  box-sizing: border-box;
 }
-.range-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+
+.range-row {
+  margin: 6px 0 12px 0;
+}
+
+.range-label {
+  font-size: 12px;
+  margin-right: 4px;
+}
+
+.radio-group {
+  margin: 8px 0 12px 0;
+}
+
+.radio-group label {
+  display: block;
+  margin-bottom: 4px;
 }
 
 input[type="submit"] {
-  background-color: #00bfff;
-  color: black;
+  background-color: #3333ff;
+  color: white;
   border: none;
-  padding: 8px 15px;
+  padding: 8px 16px;
   cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 input[type="submit"]:hover {
-  background-color: #33ccff;
+  background-color: #4d4dff;
 }
 
 .buttons {
@@ -71,22 +114,15 @@ input[type="submit"]:hover {
 
 .btn {
   display: inline-block;
-  background-color: #00bfff;
-  color: black;
-  padding: 8px 15px;
+  background-color: #3333ff;
+  color: white;
+  padding: 8px 16px;
   text-decoration: none;
   margin: 5px;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 .btn:hover {
-  background-color: #33ccff;
-}
-
-.radio-group {
-  margin: 10px 0 15px 0;
-}
-
-.radio-group label {
-  display: block;
-  margin-bottom: 8px;
+  background-color: #4d4dff;
 }

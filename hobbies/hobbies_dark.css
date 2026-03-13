@@ -1,46 +1,69 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #1a1a1a;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.nav {
+  background-color: #141428;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #22224a;
+}
+
+.nav a {
+  display: inline-block;
+  margin: 0 12px;
+  color: #c7d0ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
 }
 
 .container {
   width: 75%;
   margin: 40px auto;
-  background-color: rgba(30,30,30,0.95);
+  background-color: #1a1a24;
   padding: 30px;
   border-radius: 8px;
-  color: white;
+  border: 1px solid #262a4f;
 }
 
 h1 {
   text-align: center;
-  color: #00bfff;
+  color: #c7d0ff;
+  margin-top: 0;
 }
 
 .card {
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  background-color: #1a1a2e;
-  border: 1px solid #4d4dff;
+  padding: 18px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  background-color: #181824;
+  border: 1px solid #3333ff;
 }
 
 .card h2 {
-  color: #401ba6;
+  color: #d0d4ff;
+  margin-top: 0;
 }
 
-.card:hover {
-  border-color: #8080ff;
-  box-shadow: 0 0 10px rgba(102,102,255,0.3);
+.image-row {
+  margin-top: 10px;
 }
 
-img {
+.image-row img {
   margin: 10px 10px 0 0;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 audio {
+  display: block;
   margin-top: 10px;
 }
 
@@ -51,13 +74,15 @@ audio {
 
 .btn {
   display: inline-block;
-  background-color: #00bfff;
-  color: black;
-  padding: 8px 15px;
+  background-color: #3333ff;
+  color: white;
+  padding: 8px 16px;
   text-decoration: none;
   margin: 5px;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 .btn:hover {
-  background-color: #33ccff;
+  background-color: #4d4dff;
 }
