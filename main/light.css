@@ -1,22 +1,33 @@
 body {
   background-color: #f4f6f9;
-  color: #222222;
-  font-family: Arial, sans-serif;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4 {
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 0;
+  color: #1a1a1a;
+}
+
+h3 {
+  color: #3333ff;
+  border-bottom: 2px solid #e0e6ff;
+  padding-bottom: 5px;
+  margin-top: 30px;
 }
 
 .page {
   width: 80%;
-  margin: 25px auto 40px auto;
+  max-width: 1000px;
+  margin: 30px auto;
   background-color: #ffffff;
-  padding: 25px 30px;
-  border-radius: 6px;
-  border: 1px solid #dde3f7;
+  padding: 30px 40px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .banner {
@@ -29,15 +40,21 @@ h1, h2, h3, h4 {
   border-collapse: collapse;
 }
 
+.banner table tr:hover,
+.banner table tr:nth-child(even) {
+  background-color: transparent;
+}
+
 .banner td {
   border: none;
-  padding: 20px 40px;
+  padding: 25px 40px;
   vertical-align: middle;
 }
 
 .banner-left img {
-  border-radius: 6px;
-  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  margin-bottom: 12px;
 }
 
 .banner h1 {
@@ -46,10 +63,10 @@ h1, h2, h3, h4 {
 }
 
 .banner h4 {
-  margin: 6px 0 0 0;
+  margin: 8px 0 0 0;
   color: #e6f0ff;
-  font-style: italic;
-  font-size: 14px;
+  font-weight: normal;
+  font-size: 15px;
 }
 
 .banner a {
@@ -63,83 +80,132 @@ h1, h2, h3, h4 {
 }
 
 .banner-right form {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
-.nav {
-  background-color: #f0f2ff;
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
   text-align: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #d3d8ff;
 }
 
-.nav a {
+ul.navbar li {
   display: inline-block;
-  margin: 0 12px;
+}
+
+ul.navbar li a {
+  display: block;
   color: #3333ff;
+  text-align: center;
+  padding: 14px 20px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
 }
 
-.nav a:hover {
-  text-decoration: underline;
+ul.navbar li a:hover:not(.active) {
+  background-color: #f0f4ff;
+}
+
+ul.navbar li a.active {
+  color: #ffffff;
+  background-color: #3333ff;
+}
+
+.footer {
+  text-align: center;
+  background-color: #ffffff;
+  color: #3333ff;
+  border-top: 1px solid #e0e0e0;
+  padding: 15px 0;
+  margin-top: 40px;
+  width: 100%;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 18px 0;
+  margin: 20px 0;
   background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 th, td {
-  border: 1px solid #d7d7d7;
-  padding: 10px;
+  border: 1px solid #d0d0ff;
+  padding: 15px 20px;
   text-align: left;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 th {
-  background-color: #f3f5ff;
-  color: #222222;
+  background-color: #3333ff;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f4ff;
+}
+
+tr:hover {
+  background-color: #e0e6ff;
 }
 
 .summary-text {
   max-width: 900px;
-  line-height: 1.5;
+  font-size: 15px;
+  color: #444444;
 }
 
 ul {
-  padding-left: 22px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
 }
 
 .quote-list li {
-  font-family: "Georgia", serif;
+  font-style: italic;
+  color: #555555;
+  border-left: 3px solid #3333ff;
+  padding-left: 10px;
+  list-style-type: none;
+  margin-left: -20px;
 }
 
-input[type="submit"] {
+input[type="submit"], .btn {
   background-color: #3333ff;
   color: #ffffff;
   border: none;
-  padding: 7px 16px;
+  padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, .btn:hover {
   background-color: #1a1aff;
 }
 
 .inline-form {
   display: inline-block;
-  margin: 0 8px 0 0;
+  margin: 0 10px 0 0;
 }
 
 .page a {
   color: #3333ff;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .page a:hover {
@@ -147,6 +213,8 @@ input[type="submit"]:hover {
 }
 
 .section-footer {
-  margin-top: 30px;
+  margin-top: 40px;
   text-align: left;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
 }
