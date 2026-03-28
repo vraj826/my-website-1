@@ -1,93 +1,127 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feedback Form - Dark Mode</title>
   <link rel="stylesheet" href="form_dark.css">
 </head>
 
-<body>
+<body class="has-fixed-header">
 
-<ul class="navbar">
-  <li><a href="../main/cv_dark.html">CV</a></li>
-  <li><a href="../hobbies/hobbies_dark.html">Hobbies</a></li>
-  <li><a href="../beliefs/beliefs_dark.html">Beliefs</a></li>
-  <li><a class="active" href="form_dark.html">Feedback</a></li>
-  <li><a href="../contact/contact_dark.html">Contact</a></li>
-</ul>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="../main/cv_dark.html">CV</a></li>
+        <li><a href="../hobbies/hobbies_dark.html">Hobbies</a></li>
+        <li><a href="../beliefs/beliefs_dark.html">Beliefs</a></li>
+        <li><a class="active" href="form_dark.html">Feedback</a></li>
+        <li><a href="../contact/contact_dark.html">Contact</a></li>
+      </ul>
+      <span class="nav-brand">Vrajkumar Shah</span>
+    </nav>
+  </header>
 
-<div class="container">
+  <header class="page-banner">
+    <h1 class="page-banner__title">Feedback Form</h1>
+    <p class="page-banner__subtitle">Share your thoughts on this portfolio</p>
+  </header>
 
-  <h1>Feedback Form</h1>
+  <main class="container">
 
-  <p>Please write your thoughts about my CV — Anonymous feedback allowed!</p>
+    <p class="intro">Please write your thoughts about my CV — Anonymous feedback allowed!</p>
 
-  <form action="../main/cv_dark.html" method="get" novalidate>
+    <form action="../main/cv_dark.html" method="get" novalidate class="feedback-form">
 
-    <fieldset>
-      <legend>Personal Information (Optional)</legend>
+      <fieldset>
+        <legend>Personal Information (Optional)</legend>
 
-      <label>First Name:</label>
-      <input type="text" name="fname">
+        <div class="form-row form-row--2">
+          <div class="form-field">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname">
+          </div>
+          <div class="form-field">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname">
+          </div>
+        </div>
 
-      <label>Last Name:</label>
-      <input type="text" name="lname">
+        <div class="form-field">
+          <label for="email">Email (Optional)</label>
+          <input type="email" id="email" name="email">
+        </div>
 
-      <label>Email (Optional):</label>
-      <input type="email" name="email">
+        <div class="form-field">
+          <span class="label-text">Gender</span>
+          <div class="radio-group">
+            <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+            <label><input type="radio" name="gender" value="Other"> Other</label>
+          </div>
+        </div>
 
-      <label>Gender:</label>
-      <div class="radio-group">
-        <label><input type="radio" name="gender" value="Male"> Male</label>
-        <label><input type="radio" name="gender" value="Female"> Female</label>
-        <label><input type="radio" name="gender" value="Other"> Other</label>
-      </div>
+        <div class="form-field">
+          <label for="profession">Profession</label>
+          <select id="profession" name="profession">
+            <option>Select</option>
+            <option>Student</option>
+            <option>Working Professional</option>
+            <option>Self-Employed</option>
+          </select>
+        </div>
+      </fieldset>
 
-      <label>Profession:</label>
-      <select name="profession">
-        <option>Select</option>
-        <option>Student</option>
-        <option>Working Professional</option>
-        <option>Self-Employed</option>
-      </select>
-    </fieldset>
+      <fieldset>
+        <legend>Your Thoughts on my CV</legend>
 
-    <fieldset>
-      <legend>Your Thoughts on my CV</legend>
+        <div class="form-field">
+          <span class="label-text">Overall Rating (1 - 5)</span>
+          <div class="range-row">
+            <span class="range-label">1</span>
+            <input type="range" name="rating" min="1" max="5">
+            <span class="range-label">5</span>
+          </div>
+        </div>
 
-      <label>Overall Rating (1 - 5):</label>
-      <div class="range-row">
-        <span class="range-label">1</span>
-        <input type="range" name="rating" min="1" max="5">
-        <span class="range-label">5</span>
-      </div>
+        <div class="form-field">
+          <label for="likes">What did you like?</label>
+          <textarea id="likes" name="likes" rows="4"></textarea>
+        </div>
 
-      <label>What did you like?</label>
-      <textarea name="likes" rows="4"></textarea>
+        <div class="form-field">
+          <label for="suggestions">Suggestions for improvement</label>
+          <textarea id="suggestions" name="suggestions" rows="4"></textarea>
+        </div>
 
-      <label>Suggestions for improvement:</label>
-      <textarea name="suggestions" rows="4"></textarea>
+        <div class="form-field form-field--checkbox">
+          <label class="label-inline"><input type="checkbox" name="recommend" value="Yes"> Would you recommend this CV?</label>
+        </div>
 
-      <label>Would you recommend this CV?</label><br>
-      <input type="checkbox" name="recommend" value="Yes"> Yes<br><br>
+        <div class="form-field">
+          <label for="file">Upload reference (optional)</label>
+          <input type="file" id="file" name="file">
+        </div>
 
-      <label>Upload reference (optional):</label>
-      <input type="file" name="file">
+        <div class="form-actions">
+          <input type="submit" value="Submit Feedback">
+        </div>
+      </fieldset>
 
-      <input type="submit" value="Submit Feedback">
-    </fieldset>
+    </form>
 
-  </form>
+    <div class="buttons">
+      <a href="../main/cv_dark.html" class="btn">Back to CV</a>
+      <a href="form_light.html" class="btn">Switch to Light Mode</a>
+    </div>
 
-  <div class="buttons">
-    <a href="../main/cv_dark.html" class="btn">Back to CV</a>
-    <a href="form_light.html" class="btn">Switch to Light Mode</a>
-  </div>
+  </main>
 
-</div>
-
-<div class="footer">
-  <p>This is a personal academic portfolio website created by Vrajkumar Shah.</p>
-</div>
+  <footer class="site-footer">
+    <p>This is a personal academic portfolio website created by Vrajkumar Shah.</p>
+  </footer>
 
 </body>
+
 </html>

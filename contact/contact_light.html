@@ -1,46 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Light Mode</title>
   <link rel="stylesheet" href="contact_light.css">
 </head>
 
-<body>
+<body class="has-fixed-header">
 
-  <ul class="navbar">
-    <li><a href="../main/cv_light.html">CV</a></li>
-    <li><a href="../hobbies/hobbies_light.html">Hobbies</a></li>
-    <li><a href="../beliefs/beliefs_light.html">Beliefs</a></li>
-    <li><a href="../feedback/form_light.html">Feedback</a></li>
-    <li><a class="active" href="contact_light.html">Contact</a></li>
-  </ul>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="../main/cv_light.html">CV</a></li>
+        <li><a href="../hobbies/hobbies_light.html">Hobbies</a></li>
+        <li><a href="../beliefs/beliefs_light.html">Beliefs</a></li>
+        <li><a href="../feedback/form_light.html">Feedback</a></li>
+        <li><a class="active" href="contact_light.html">Contact</a></li>
+      </ul>
+      <span class="nav-brand">Vrajkumar Shah</span>
+    </nav>
+  </header>
 
-  <div class="container">
+  <header class="page-banner">
+    <h1 class="page-banner__title">Contact</h1>
+    <p class="page-banner__subtitle">Send a message</p>
+  </header>
 
-    <h1>Contact Us</h1>
+  <main class="container">
 
-    <form action="../main/cv_light.html" method="post">
+    <form action="../main/cv_light.html" method="post" class="contact-form">
 
       <fieldset>
         <legend>Send a Message</legend>
 
-        <label>Name:</label>
-        <input type="text" name="name" required>
+        <div class="form-row form-row--2">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
 
-        <label>Email:</label>
-        <input type="email" name="email" required>
+        <div class="form-field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
 
-        <label>Phone:</label>
-        <input type="tel" name="phone">
+        <div class="form-field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject">
+        </div>
 
-        <label>Subject:</label>
-        <input type="text" name="subject">
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
 
-        <label>Message:</label>
-        <textarea name="message" rows="5" required></textarea>
-
-        <input type="submit" value="Send Message">
+        <div class="form-actions">
+          <input type="submit" value="Send Message">
+        </div>
       </fieldset>
 
     </form>
@@ -50,11 +73,11 @@
       <a href="contact_dark.html" class="btn">Switch to Dark Mode</a>
     </div>
 
-  </div>
+  </main>
 
-  <div class="footer">
+  <footer class="site-footer">
     <p>This is a personal academic portfolio website created by Vrajkumar Shah.</p>
-  </div>
+  </footer>
 
 </body>
 
