@@ -23,7 +23,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   line-height: 1.65;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 body.has-fixed-header {
@@ -149,7 +149,7 @@ h1, h2, h3, h4 {
   margin: 0 0 1.25rem;
   color: #444444;
   font-size: clamp(0.875rem, 2.2vw, 1rem);
-  max-width: 36rem;
+  max-width: 40rem;
 }
 
 .hero__social {
@@ -324,7 +324,7 @@ tbody tr:hover {
 }
 
 .card__list li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .quote-list {
